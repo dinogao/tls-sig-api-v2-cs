@@ -5,12 +5,12 @@
         net40;net45;net451;net452;net46;net461;
         netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;
     </TargetFrameworks>
-    <RootNamespace>tencentyun</RootNamespace>
+    <RootNamespace>tencentcloud</RootNamespace>
     <PackageId>tls-sig-api-v2</PackageId>
     <Version>1.0.1</Version>
     <Authors>weijunyi</Authors>
-    <Company>tencentyun</Company>
-    <Description>tls-sig-api-v2 适用于腾讯云通信生成用户账号签名。之前的非对称密钥无法使用此版本的 api，如需使用请查看 https://github.com/tencentyun/tls-sig-api-cs。</Description>
+    <Company>tencentcloud</Company>
+    <Description>tls-sig-api-v2 Applicable to Tencent Cloud TRTC and CHAT services to generate user account signatures. Previous asymmetric keys cannot be used with this version of the API. If you need to use it, please check https://github.com/tencentcloud/tls-sig-api-cs。</Description>
   </PropertyGroup>
 
   <ItemGroup>

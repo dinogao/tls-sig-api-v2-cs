@@ -1,29 +1,26 @@
-## 说明
-此项目为 tls-sig-api-v2 版本的 c# 实现。之前的非对称密钥无法使用此版本的 api，如需使用请查看[这里](https://github.com/tencentyun/tls-sig-api-cs)。
+## Note
+This project is the c# implementation of tls-sig-api-v2. Previous asymmetric keys cannot use APIs of this version. To enable them to use APIs of this version,[see here](https://github.com/tencentcloud/tls-sig-api-cs)。
 
-## 集成
-使用 Visual Studio 工具下的程序包管理器和 NuGet 命令行均可以集成。另外也可以下载源码直接集成。
+## integration
+Integration is possible using both the package manager under Visual Studio Tools and the NuGet command line. In addition, you can download the source code for direct integration.
+### VS Integration
 
-### VS 集成
+It is recommended to use Visual Studio 2017 and above. If the version is too low and does not support NuGet, use the source code integration directly.
+In Visual Studio follow `Tools`->`NuGet Package Manager`->`Manage NuGet Packages for Solutions`, then search for `tls-sig-api-v2` to install.
+### NuGet command line integration
 
-推荐使用 Visual Studio 2017 及以上版本，如果版本过低不支持 NuGet，直接使用源码集成。
-
-在 Visual Studio 中按照 `工具`->`NuGet 包管理器`->`管理解决方案的 NuGet 程序包`，然后搜索 `tls-sig-api-v2` 进行安装。
-
-### NuGet 命令行集成
-
-项目已经打包上传至 nuget.org 包管理仓库，可以使用 nuget 直接安装。
+The project has been packaged and uploaded to the nuget.org package management repository, which can be installed directly using nuget.
 ```
 PM> Install-Package tls-sig-api-v2
 ```
-多种命令行安装方式[这里](https://www.nuget.org/packages/tls-sig-api-v2)可以查看。
+A variety of command line installation methods [here](https://www.nuget.org/packages/tls-sig-api-v2)view.
 
-### 源码集成
-将 `tls-sig-api-v2-cs/TLSSigAPIv2.cs` 下载放置到开发者项目目录下，手动下载依赖 [zlib.net](https://www.nuget.org/packages/zlib.net-mutliplatform/) 开发库，按照下述示例代码调用即可。
+### source code integration
+Download `tls-sig-api-v2-cs/TLSSigAPIv2.cs` to the developer project directory, and manually download the dependencies[zlib.net](https://www.nuget.org/packages/zlib.net-mutliplatform/) development library，Call it according to the following sample code.
 
-## 使用
+## use
 ``` c#
-using tencentyun;
+using tencentcloud;
 
 TLSSigAPIv2 api = new TLSSigAPIv2(1400000000, "5bd2850fff3ecb11d7c805251c51ee463a25727bddc2385f3fa8bfee1bb93b5e");
 string sig = api.GenSig("xiaojun");

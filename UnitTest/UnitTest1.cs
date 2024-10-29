@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using tencentyun;
+using tencentcloud;
 
 namespace UnitTest
 {
